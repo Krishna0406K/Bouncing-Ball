@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            height: 75vh;
+            width: 80vw;
+            background-color: blue;
+            position: relative
+        }
+
+        .ball {
+            height: 70px;
+            width: 70px;
+            background-color: red;
+            bottom: 0px;
+            left: 0px;
+            border-radius: 50px;
+            position: absolute;
+            animation: animateX 7s linear infinite, animateY 0.5s ease-out infinite alternate;
+
+
+
+        }
+
+        @keyframes animateX {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes animateY {
+  from {
+    bottom: 100%;
+  }
+  to {
+    bottom: 0%;
+  }
+}
+
+
+         
+            
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+
+</body>
+
+</html>
